@@ -1,0 +1,8 @@
+{% for d in page %}
+    <p>{{ d }}</p>
+{% endfor %}
+<p>
+
+<a href='http://127.0.0.1:8000/pagination_example/?page={{ next_page }}'> -> </a>
+<p>
+<a href='http://127.0.0.1:8000/pagination_example/?page={{ last_page }}'> <- </a>
