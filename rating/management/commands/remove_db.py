@@ -6,7 +6,4 @@ class Command(BaseCommand):
 
 
     def handle(self, *args, **options):
-        model = Rating
-        deletes_rate = model.objects.all().filter(text='created from command line')
-        for i in deletes_rate:
-            i.delete()
+        Rating.objects.all().filter(text='created from command line').delete()
